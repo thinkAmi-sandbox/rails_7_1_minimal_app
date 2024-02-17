@@ -15,7 +15,9 @@ namespace :print_model_id_with_transaction do
       raise ActiveRecord::Rollback
     end
 
-    apple_without_transaction = Apple.create(name: '奥州ロマン')
+    apple_without_transaction = Apple.build(name: '奥州ロマン')
     puts "step3: plan.id => #{apple_without_transaction.id}"
+    apple_without_transaction.save
+    puts "step4: plan.id => #{apple_without_transaction.id}"
   end
 end

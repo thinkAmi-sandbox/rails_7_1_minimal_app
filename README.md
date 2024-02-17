@@ -6,3 +6,4 @@
 
 ## Related Blog (Written in Japanese)
 
+- [Railsにて、トランザクションの中だとモデルのid列はいつ設定されるのか確認してみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2024/02/17/221220)
